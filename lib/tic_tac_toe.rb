@@ -9,6 +9,10 @@ WIN_COMBINATIONS = [
   [2, 4, 6]
 ]
 
+def position_taken?(board, index)
+  return board[index] != ' '
+end
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -20,3 +24,6 @@ end
 def input_to_index(input)
   return input.to_i - 1
 end
+
+def move(board, position, player)
+  
