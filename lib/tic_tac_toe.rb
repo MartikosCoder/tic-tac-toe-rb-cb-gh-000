@@ -109,3 +109,10 @@ def winner(board)
 
   return nil
 end
+
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+
+  
