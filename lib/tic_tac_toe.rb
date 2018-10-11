@@ -84,3 +84,4 @@ end
 
 def full?(board)
   return board.all? { |e| e != ' ' }
+end
