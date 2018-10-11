@@ -104,7 +104,8 @@ end
 
 def winner(board)
   if won?(board)
-    return won?(board)[0]
+    token = won?(board)
+    return token[0]
   end
 
   return nil
