@@ -40,3 +40,10 @@ def move(board, position, player)
     board[position] = player
   end
 end
+
+def turn(board)
+  input = gets
+  input = input_to_index(input)
+
+  if valid_move?(board, input)
+    move(board, input)
