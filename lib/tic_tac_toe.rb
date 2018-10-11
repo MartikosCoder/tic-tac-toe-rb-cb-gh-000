@@ -57,7 +57,7 @@ def turn_count(board)
 
   board.each do |e|
     if e != ' '
-      counter += e
+      counter += 1
     end
   end
 
