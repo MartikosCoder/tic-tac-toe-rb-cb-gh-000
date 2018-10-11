@@ -25,8 +25,8 @@ def input_to_index(input)
   return input.to_i - 1
 end
 
-def valid_move?(position)
-  return position >= 0 && position < 9
+def valid_move?(board, position)
+  return (position >= 0 && position < 9) && !position_taken(board, position)
 end
 
 def move(board, position, player)
