@@ -35,7 +35,7 @@ def valid_move?(board, position)
   return true
 end
 
-def move(board, position, player = "X")
+def move(board, position, player)
   if !position_taken?(board, position)
     board[position] = player
   end
