@@ -41,17 +41,6 @@ def move(board, position, player = "X")
   end
 end
 
-def turn(board)
-  input = gets
-  input = input_to_index(input)
-
-  if valid_move?(board, input)
-    move(board, input)
-  else
-    turn(board)
-  end
-end
-
 def turn_count(board)
   counter = 0
 
@@ -69,5 +58,16 @@ def current_player(board)
     return "X"
   else
     return "O"
+  end
+end
+
+def turn(board)
+  input = gets
+  input = input_to_index(input)
+
+  if valid_move?(board, input)
+    move(board, input)
+  else
+    turn(board)
   end
 end
